@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    font-size: 18.67px;
+    font-family: 'Courier New', monospace;
+}
+
+body {
+    padding-top: 1rem;
+    background: linear-gradient(90deg, black 0%, #020800 10%, #020800 90%, black 100%);
+    color: #29CC00;
+    text-shadow: 0px 0px 2px #33FF00;
+}
+
+#title,
+#tribute-info {
+    text-align: center;
+}
+
+#title {
+    font-size: 1.714rem;
+}
+
+#title+p {
+    padding-bottom: 1rem;
+    border-bottom: 4px dashed #29CC00;
+    margin-bottom: 1rem;
+}
+
+#img-div {
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+}
+
+#image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 5px ridge grey;
+    margin: 0 auto;
+}
+
+#img-caption {
+    margin-top: 1rem;
+}
+
+#tribute-content-container {
+    margin-top: 2rem;
+}
+
+#tribute-content-container section {
+    height: 28rem;
+    width: 600px;
+
+    background: black;
+    color: #22AB00;
+
+    border: 5px ridge grey;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.section-header {
+    background-color: #ABABAB;
+    color: black;
+    border-bottom: 5px ridge #ABABAB;
+    text-shadow: none;
+    overflow: hidden;
+}
+
+.section-content {
+    padding: 0;
+}
+
+.section-content ul {
+    padding: 0;
+    margin: 1rem .5rem 0 1.5rem;
+}
+
+.section-content li {
+    margin-bottom: 1rem;
+}
+
+#tribute-content-container h2 {
+    text-align: center;
+    font-size: 1.29rem;
+}
+
+#tribute-content-container+p {
+    text-align: center;
+    margin: 1.5rem auto;
+    margin-top: 1rem;
+}
+
+a {
+    color: red;
+    text-shadow: 0 0 2px #D60000;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C966FF;
+    text-shadow: 0 0 3px #9F51C9;
+}
+
+a:active {
+    color: #9149B8;
+    text-shadow: 0 0 2px #733A91;
+}
+
+@media (min-width: 1850px) {
+
+    #tribute-content-container {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+
+    #tribute-content-container section {
+        min-width: 500px;
+    }
+
+    #tribute-content-container+p {
+        margin-top: .5rem;
+    }
+
+}
