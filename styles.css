@@ -27,7 +27,7 @@ body {
 }
 
 #img-div {
-    width: 500px;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
     margin-top: 1.5rem;
@@ -35,8 +35,8 @@ body {
 
 #image {
     display: block;
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    /* height: auto; */
     border: 5px ridge grey;
     margin: 0 auto;
 }
@@ -47,11 +47,13 @@ body {
 
 #tribute-content-container {
     margin-top: 2rem;
+    /* background: red; */
+    width: 100%;
 }
 
 #tribute-content-container section {
-    height: 28rem;
-    width: 600px;
+
+    width: 100%;
 
     background: black;
     color: #22AB00;
@@ -59,6 +61,7 @@ body {
     border: 5px ridge grey;
     margin: 0 auto;
     margin-bottom: 1rem;
+
 }
 
 .section-header {
@@ -112,7 +115,7 @@ a:active {
     text-shadow: 0 0 2px #733A91;
 }
 
-@media (min-width: 1850px) {
+@media (min-width: 992px) {
 
     #tribute-content-container {
         max-width: 100%;
@@ -123,12 +126,21 @@ a:active {
         margin-top: 2rem;
     }
 
-    #tribute-content-container section {
-        min-width: 500px;
-    }
-
     #tribute-content-container+p {
         margin-top: .5rem;
+    }
+
+
+
+}
+
+
+@media (min-width: 768px) {
+
+    #img-div {
+
+        width: 25%;
+
     }
 
 }
